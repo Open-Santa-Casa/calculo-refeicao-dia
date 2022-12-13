@@ -13,17 +13,25 @@ function conversorGSheet() {
   while (files.hasNext()) {
     let file = files.next();
     let name = file.getName();
-    if (name.indexOf('.xlsx')>-1){
+    /**
+    * 🎄✨🎇 🥂 ☃⛄
+    * |Google Sheets | MimeType == application/vnd.google-apps.spreadsheet
+    * |Excel         | MimeType == application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+      🎆
+    **/
+    if (file.getMimeType() == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"){
       let fileID = file.getId()
       let blobFile = file.getBlob()
       let newFile = {
         title : name+'_converted',
         parents: [{id: folderBId}] //  Added
       };
-  /* ⚠️    🗝️
+
+  /* ⚠️  <----->  🗝️
   ❗Inicia Drive API adicionada em: https://developers.google.com/apps-script/guides/services/advanced#enable_advanced_services
   ❗E ativada em: App Script > "Projeto" > Serviços + > Drive API
   */
+
       gfile = Drive.Files.insert(newFile, blobFile, {
         convert: true,
         filetype: "Google Sheets"
@@ -32,6 +40,7 @@ function conversorGSheet() {
     }
   }
 }
+
 
 /*
 🔍 Pesquisa itens
@@ -62,10 +71,10 @@ function getData(){
       }
     }
     let escolhida = listaEscolhida(itemColumn, priceColumn)
-        console.log(escolhida.length)
+    console.log(escolhida.length)
     for (let i =0; i <= escolhida.length; i++){
-      var obj = {item:String(itemColumn[i][0]), price:Number(priceColumn[i][0])}
-      //console.log(obj)
+      //var obj = {item:String(itemColumn[i][0]), price:Number(priceColumn[i][0])}
+      console.log(escolhida[i])
     }
 //  📺      
   /**                                       🚧 Em Construção 🚧
