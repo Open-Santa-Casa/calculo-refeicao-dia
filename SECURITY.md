@@ -10,4 +10,3 @@
 
 ## Reporting a Vulnerability
 
-

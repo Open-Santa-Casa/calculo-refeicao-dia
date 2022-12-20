@@ -18,6 +18,10 @@ Este código foi contruído e utilizado em ambiente Google no AppScript.
 
 4. Altere os id's das planilha
 
+## Fluxo do Programa
+
+(Fluxograma)[My First Board.jpg]
+
 #### Obs: Pretensão é utilizar Node.js ou Streamlit em um futuro distânte quando a preguiça permitir. 🥱
 
 Shalom! 🖖
