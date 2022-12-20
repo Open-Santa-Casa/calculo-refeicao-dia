@@ -29,7 +29,7 @@ Este código foi contruído e utilizado em ambiente Google no AppScript.
 
 ## Fluxo do Programa
 
-![Fluxograma](Open-Santa-Casa/calculo-refeicao-dia/My First Board.jpg)
+![Fluxograma]("Open-Santa-Casa/calculo-refeicao-dia/My First Board.jpg")
 
 #### Obs: Pretensão é utilizar Node.js ou Streamlit em um futuro distânte quando a preguiça permitir. 🥱
 
