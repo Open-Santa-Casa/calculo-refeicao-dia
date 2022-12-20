@@ -1,6 +1,13 @@
 # Calculo de Refeição Diária
 
 Este código foi contruído e utilizado em ambiente Google no AppScript.
+![GoogleSheets](https://img.shields.io/badge/-Google%20Sheets-34A853?style=flat&logo=googlesheets&logoColor=white)
+![GoogleDrive](https://img.shields.io/badge/-Google%20Drive-4285F4?style=flat&logo=googledrive&logoColor=white)
+![GoogleCloud](https://img.shields.io/badge/-Google%20Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white)
+![GoogleCoolab](https://img.shields.io/badge/-Google%20Cloud-F9AB00?style=flat&logo=googlecolab&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+![VSCode](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 
 ### Requisitos:
 
@@ -20,8 +27,11 @@ Este código foi contruído e utilizado em ambiente Google no AppScript.
 
 ## Fluxo do Programa
 
-[![Fluxograma](https://github.dev/Open-Santa-Casa/calculo-refeicao-dia/blob/main/My%20First%20Board.jpg)]
+![Fluxograma](https://github.dev/Open-Santa-Casa/calculo-refeicao-dia/blob/c2280a98e79302b5cad80e5d0fcffdf5e0ba2e92/My%20First%20Board.jpg)
 
 #### Obs: Pretensão é utilizar Node.js ou Streamlit em um futuro distânte quando a preguiça permitir. 🥱
 
 Shalom! 🖖
+
+#### You can find me on.
+[![LinkedIn](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/flavioepimentel/)](https://www.linkedin.com/in/flavioepimentel/)
