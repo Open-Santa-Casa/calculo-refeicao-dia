@@ -2,8 +2,8 @@
 function populateCheckboxItem() {
   // call your form and connect to the drop-down item
   const ss = SpreadsheetApp
-  var form = FormApp.openById("13CCveqJ1UPEhdgmDqr7igQrlQADZaW30BzJLGo_sYEE");
-  const ssItens = ss.openById("1arAl4cB0kFQCAnCca9jkFVvMXwc8o4SDBGob9JM7ag0").getSheetByName("Cardápio 📖")
+  var form = FormApp.openById("FORM ID");
+  const ssItens = ss.openById("PLANILHA ID").getSheetByName("Cardápio 📖")
 
   
   const obj_itens = ["70132812","776748188", "2118690767", "2030824657","2041890130","332434288","1206063857" ]
@@ -32,7 +32,7 @@ function populateCheckboxItem() {
 //========================================== 🚧   ⚠️ EM CONSTRUÇÃO ⚠️   🚧 ===========================================
 function capturaCardapio(){
   const ss = SpreadsheetApp
-  const cardapio = ss.openById("1arAl4cB0kFQCAnCca9jkFVvMXwc8o4SDBGob9JM7ag0")
+  const cardapio = ss.openById("PLANILHA ID")
   .getSheetByName("Respostas ao formulário Cardápio 📖")
   const carimboDataHora = String("A2:A")
   const carimboDataHoraRange = cardapio.getRange(carimboDataHora).activate()

@@ -6,7 +6,7 @@
 
 */
 function conversorGSheet() {
-  const folderBId ="1bpF4di0oBhUeVw-XvJAP-XU71Iq1NM28X5S-K3gMHiWCalCDhZy65JTheZPC0R_ZAp2X_lx7"
+  const folderBId ="FOLDER ID"
   const driveFolder = DriveApp.getFolderById(String(folderBId))
   const files = driveFolder.getFiles();
   
@@ -49,7 +49,7 @@ function conversorGSheet() {
 */
 function getData(){
   const ss = SpreadsheetApp
-  const folderBId ="1bpF4di0oBhUeVw-XvJAP-XU71Iq1NM28X5S-K3gMHiWCalCDhZy65JTheZPC0R_ZAp2X_lx7"
+  const folderBId ="FOLDER ID"
   const driveFolder = DriveApp.getFolderById(String(folderBId))
   const files = driveFolder.getFiles();
   let resultadoNewRange = Array()  
@@ -88,6 +88,6 @@ function getData(){
    */
   }
 
-  const planilhaCentral = ss.openById("1arAl4cB0kFQCAnCca9jkFVvMXwc8o4SDBGob9JM7ag0").getSheetByName("Cardápio 📖")
+  const planilhaCentral = ss.openById("PLANILHA ID").getSheetByName("Cardápio 📖")
 }
 

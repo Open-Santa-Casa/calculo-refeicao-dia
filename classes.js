@@ -1,8 +1,12 @@
 class TabelaPrice{
-  constructor(price){
-    this.item = price
+  constructor(cod_item, description, price_quote, sinonimos){
+    this.cod_item = cod_item,
+    this.description = description,
+    this.price_quote = price_quote
+    this.sinonimos = sinonimos
   }
 }
+
 
 
 class novoRegistro {

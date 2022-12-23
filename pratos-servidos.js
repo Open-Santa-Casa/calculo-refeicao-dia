@@ -1,7 +1,7 @@
 //========================================== 🚧   ⚠️ EM CONSTRUÇÃO ⚠️   🚧 ===========================================
 function registroRefeicao(){
   const ss = SpreadsheetApp
-  const cardapio = ss.openById("1arAl4cB0kFQCAnCca9jkFVvMXwc8o4SDBGob9JM7ag0")
+  const cardapio = ss.openById("PLANILHA ID")
   .getSheetByName("Respostas ao formulário Refeições Diárias 🥣")
   const carimboDataHora = String("A2:A")
   const carimboDataHoraRange = cardapio.getRange(carimboDataHora).activate()
