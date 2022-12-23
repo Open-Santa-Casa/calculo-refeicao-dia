@@ -1,7 +1,7 @@
 //========================================== 🚧   ⚠️ EM CONSTRUÇÃO ⚠️   🚧 ===========================================
-function registroRefeicao(){
+function capturaRegistroRefeicao(){
   const ss = SpreadsheetApp
-  const cardapio = ss.openById("PLANILHA ID")
+  const cardapio = ss.openById(planilha_id_bdNutricao)
   .getSheetByName("Respostas ao formulário Refeições Diárias 🥣")
   const carimboDataHora = String("A2:A")
   const carimboDataHoraRange = cardapio.getRange(carimboDataHora).activate()
@@ -10,7 +10,7 @@ function registroRefeicao(){
  
   //--------------
     /* 
-    @disclaimer
+    @Dev
       Esta iteração tem o intuito de fazer a leitura de linhas por coluna
     */
   let resultadoNewRange = Array()  
@@ -33,7 +33,7 @@ function registroRefeicao(){
     //------------
 
     /* 
-    @disclaimer
+      @Dev
       Esta iteração tem o intuito de fazer o split dos itens lidos da celula para a captura 
       futura do preço médio dos itens
     */
