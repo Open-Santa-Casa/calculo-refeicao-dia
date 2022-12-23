@@ -23,7 +23,7 @@ Este código foi contruído e utilizado em ambiente Google no AppScript.
 
 2. Copie e cole os códigos dos arquivos dentro dos arquivos do AppScript.
 
-3. Ative Drive ![API](https://developers.google.com/apps-script/guides/services/advanced#enable_advanced_services) em "Serviços +"
+3. Ative Drive [API](https://developers.google.com/apps-script/guides/services/advanced#enable_advanced_services) em "Serviços +"
 
 4. Altere os id's das planilha e pastas no arquivo "venv.js"
 
