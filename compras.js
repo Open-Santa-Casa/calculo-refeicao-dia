@@ -1,3 +1,4 @@
+
 /* 
   🟢 --> Formulário: + Compras 🍇📦🛒  
   
@@ -5,42 +6,11 @@
       no formato gSheets 
 
 */
-function conversorGSheet() {
-  const folderBId ="FOLDER ID"
-  const driveFolder = DriveApp.getFolderById(String(folderBId))
-  const files = driveFolder.getFiles();
-  
-  while (files.hasNext()) {
-    let file = files.next();
-    let name = file.getName();
-    /**
-    * 🎄✨🎇 🥂 ☃⛄
-    * |Google Sheets | MimeType == application/vnd.google-apps.spreadsheet
-    * |Excel         | MimeType == application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
-      🎆
-    **/
-    if (file.getMimeType() == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"){
-      let fileID = file.getId()
-      let blobFile = file.getBlob()
-      let newFile = {
-        title : name+'_converted',
-        parents: [{id: folderBId}] //  Added
-      };
-
-  /* ⚠️  <----->  🗝️
-  ❗Inicia Drive API adicionada em: https://developers.google.com/apps-script/guides/services/advanced#enable_advanced_services
-  ❗E ativada em: App Script > "Projeto" > Serviços + > Drive API
-  */
-
-      gfile = Drive.Files.insert(newFile, blobFile, {
-        convert: true,
-        filetype: "Google Sheets"
-      })
-      Drive.Files.remove(fileID)
-    }
-  }
+function compras(){
+  conversorGSheet(folder_id_compras)
+  pivotTable(folder_id_compras)
+  readPivotTable(folder_id_compras)
 }
-
 
 /*
 🔍 Pesquisa itens
