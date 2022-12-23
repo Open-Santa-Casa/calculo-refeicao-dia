@@ -1,3 +1,9 @@
+  
+ function cardapio(){
+  conversorGSheet(folder_id_cardapio)
+}
+ 
+  
   // 🟢 --> FORMULÁRIO: "Cardápio 📖"
 function populateCheckboxItem() {
   // call your form and connect to the drop-down item
