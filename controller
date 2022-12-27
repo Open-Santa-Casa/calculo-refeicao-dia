@@ -1,0 +1,38 @@
+// CREAT 🆕
+let createData = (data) => firestore.createDocument("FirstCollection", data); 
+let createDataInCollection = (data) => firestore.createDocument("FirstCollection/FirstDocument", data);
+
+
+// UPDATE ✏️
+let updateData = (data) => firestore.updateDocument("FirstCollection/FirstDocument", data);
+// mask parameter to true 🎭
+let updateDataSpecifyMask = (data) => firestore.updateDocument("FirstCollection/FirstDocument", data, true);
+// set the mask parameter to an array of field names 🎭 -> pode ser utilizado para mascarar nome de pacientes e outros dados
+let updateDataFieldsMask = (data, field1, field2, fieldN) => firestore.updateDocument(
+  "FirstCollection/FirstDocument", data, [field1, field2, fieldN]
+  );
+
+// DELETE 🗑️ 
+let deleteData = (data) => firestore.deleteDocument("FirstCollection/FirstDocument");
+
+
+
+// READ 👓
+const documentWithMetadata = firestore.getDocument("FirstCollection/FirstDocument");
+
+// // querys ❓
+// const allDocuments = firestore.getDocuments("FirstCollection");
+// const someDocuments = firestore.getDocuments("FirstCollection", ["Doc1", "Doc2", "Doc3"]);
+// const allDocumentsWithTest = firestore.query("FirstCollection").Where("name", "==", "Test!").Execute();
+// const allDocumentsNameAsc = firestore.query("FirstCollection").OrderBy("name").Execute();
+// const allDocumentsNameDesc = firestore.query("FirstCollection").OrderBy("name", "desc").Execute();
+// const documents2_3_4_5 = firestore.query("FirstCollection").Limit(4).Offset(2).Execute();
+// const documents3_4_5_6 = firestore.query("FirstCollection").Range(3, 7).Execute();
+
+// const doc          = firestore.getDocument("My Collection/My Document");
+// const originalData = doc.obj      // Original database object (your stored data)
+// const readTime     = doc.read     // Date Object of the Read time from database
+// const updateTime   = doc.updated  // Date Object of the Updated time from database
+// const createdTime  = doc.created  // Date Object of the Created time from database
+// const name         = doc.name     // Full document path (projects/projName/databases/(default)/documents/My Collection/My Document)
+// const path         = doc.path     // Local document path (My Collection/My Document)
